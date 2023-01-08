@@ -1,0 +1,1 @@
+show centre data in front from backend
