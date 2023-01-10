@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'FrontProjet5A'`, () => {
+  it(`should have as title 'vaccination-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('FrontProjet5A');
+    expect(app.title).toEqual('vaccination-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('FrontProjet5A app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('vaccination-app app is running!');
   });
 });

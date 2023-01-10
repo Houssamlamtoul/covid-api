@@ -43,14 +43,14 @@
 <body>
 
 <h2>Trouver un centre de vaccination</h2>
-
+<button (click)="goToInscription()" style="float: right;" >Inscription</button>
+<button (click)="goToConnexion()" style="float: right;" >Connexion</button>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Dans quelle ville" title="Type in a name">
 
 <ul id="myUL">
-  <li><a href="#">Nancy - Tour Marcel Brot</a></li>
-  <li><a href="#">CH Narbonne</a></li>
-
-  <li><a href="#">Paris</a></li>
+  <li><a>Nancy - Tour Marcel Brot<button (click)="goToReservation()" style="float: right;" >Réserver</button></a> </li>
+  <li><a>CH Narbonne  <button (click)="goToReservation()" style="float: right;">Réserver</button></a></li>
+  <li><a>Paris  <button (click)="goToReservation()" style="float: right;">Réserver</button></a></li>
   
 </ul>
 
