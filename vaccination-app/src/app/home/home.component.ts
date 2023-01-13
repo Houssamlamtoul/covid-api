@@ -4,14 +4,15 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
   constructor(private router : Router) { }
 
   ngOnInit(): void {
   }
-
+  
   goToReservation(){
     this.router.navigate(["/reservation"])
   }
@@ -21,5 +22,6 @@ export class HomeComponent implements OnInit {
   goToInscription() {
     this.router.navigate(["/inscription"])
   }
+
 
 }

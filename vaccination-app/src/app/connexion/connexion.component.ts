@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-connexion',
   templateUrl: './connexion.component.html',
-  styleUrls: ['./connexion.component.css']
+  styleUrls: ['./connexion.component.scss'],
 })
 export class ConnexionComponent implements OnInit {
 
@@ -13,7 +12,6 @@ export class ConnexionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
   goToInscriptionpage(){
     this.router.navigate(["/inscription"])
   }

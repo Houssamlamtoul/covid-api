@@ -4,17 +4,15 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-inscription',
   templateUrl: './inscription.component.html',
-  styleUrls: ['./inscription.component.css']
+  styleUrls: ['./inscription.component.scss']
 })
 export class InscriptionComponent implements OnInit {
 
-  constructor(private router : Router) {}
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
   }
-
   goToInscription() {
     this.router.navigate(["/inscription"])
   }
-
 }
