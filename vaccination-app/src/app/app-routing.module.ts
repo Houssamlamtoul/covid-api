@@ -9,6 +9,8 @@ import { SuperadminComponent } from './superadmin/superadmin.component';
 import { ValidationReservationComponent } from './validation-reservation/validation-reservation.component';
 import { VaccinationCenterComponent } from './vaccination-center/vaccination-center.component';
 import { MedecinComponent } from './medecin/medecin.component';
+import { FiledattenteComponent } from './filedattente/filedattente.component';
+
 
 const routes: Routes = [
   {path : "home" , component: HomeComponent },
@@ -20,6 +22,7 @@ const routes: Routes = [
   {path : "admin" , component : AdminComponent },
   {path : "vaccination" , component : VaccinationCenterComponent },
   {path : "medecin" , component : MedecinComponent },
+  {path : "fildattente", component : FiledattenteComponent},
 ];
 
 @NgModule({

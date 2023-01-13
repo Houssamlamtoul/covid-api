@@ -32,6 +32,8 @@ import { ModifierCentreComponent } from './modifier/modifier-centre/modifier-cen
 import { VaccinationCenterComponent } from './vaccination-center/vaccination-center.component';
 import { AdminComponent } from './admin/admin.component';
 import { MedecinComponent } from './medecin/medecin.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FiledattenteComponent } from './filedattente/filedattente.component';
 
 
 @NgModule({
@@ -50,6 +52,7 @@ import { MedecinComponent } from './medecin/medecin.component';
     VaccinationCenterComponent,
     AdminComponent,
     MedecinComponent,
+    FiledattenteComponent,
     
   ],
   imports: [
@@ -72,6 +75,8 @@ import { MedecinComponent } from './medecin/medecin.component';
     MatDialogModule,
     MatDatepickerModule,
     MatSelectModule,
+    Ng2SearchPipeModule,
+    FormsModule,
     
   ],
   providers: [],

@@ -15,7 +15,13 @@ import { VaccinationCenterComponent } from '../vaccination-center/vaccination-ce
 })
 export class MedecinComponent implements OnInit {
 
-  
+    searchText:any;
+  centres = [
+  {name:"Houssam LAMTOUL",},
+  {name:"Marwane QUADDAM",},
+  {name:"Achraf HDADI",},
+
+];
   applyFilter(arg0: any) {
     throw new Error('Method not implemented.');
     }

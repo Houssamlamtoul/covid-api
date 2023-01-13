@@ -50,32 +50,44 @@
      <!-- Partie tab-->
      <mat-tab-group>
       <mat-tab label="Centres">
-        
+        <!-- Barre de recherche fonctionnel -->
+  
+<!-- Barre de recherche fonctionnel -->
         <button mat-button (click)="openDialog1()"> + Ajouter un centre</button>
-        <mat-card>
+        <div class="container">
+          <div class="row">
+      <input type="text" id="myInput" name="search" [(ngModel)]="searchText" placeholder="Chercher un centre de vaccination"title="Type in a name">
+      <p>
+
+      </p>
+
+          </div>
+          </div>
+        <mat-card id="myUL" *ngFor="let centre of centres | filter:searchText">
           <mat-card-header>
-            <mat-card-title>Paris CHU</mat-card-title>
+            <mat-card-title>{{centre.name}}</mat-card-title></mat-card-header>
             <mat-card-subtitle>Adresse</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-actions align ="end">
-            <button mat-button (click)="openDialog5()">Accéder au centre</button>
-            <button mat-button (click)="openDialog3()">Modifier</button>
-            <button mat-button>Supprimer</button>
-          </mat-card-actions >
+            <mat-card-actions align ="end">
+              <button mat-button (click)="openDialog5()">Accéder au centre</button>
+              <button mat-button (click)="openDialog3()">Modifier</button>
+              <button mat-button>Supprimer</button>
+            </mat-card-actions >
+
+          
+
         </mat-card>
         <br>
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title>Nancy CHU</mat-card-title>
-            <mat-card-subtitle>Adresse</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-actions align ="end">
-            <button mat-button (click)="openDialog5()">Accéder au centre</button>
-            <button mat-button (click)="openDialog3()">Modifier</button>
-            <button mat-button>Supprimer</button>
-          </mat-card-actions>
-        </mat-card>
+    
       </mat-tab>
+
+
+
+
+
+
+
+
+      <!-- Config . -->
       <mat-tab label="Configu.">
         <button mat-button (click)="openDialog2()"> + Ajouter une personne</button>
         <mat-card>

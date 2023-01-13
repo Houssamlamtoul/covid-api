@@ -8,6 +8,12 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  searchText:any;
+  centres = [
+  {name:"CHU Nancy", city: 'INancy'},
+  {name:"CHU Narbonne", city: 'Narbonne'},
+  {name:"CHU Metz", city: 'Metz'},];
+
   constructor(private router : Router) { }
 
   ngOnInit(): void {

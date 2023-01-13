@@ -9,32 +9,18 @@
     <h2>Trouver un centre de vaccination</h2>
     <button (click)="goToInscription()" style="float: right;" >Inscription</button>
     <button (click)="goToConnexion()" style="float: right;" >Connexion</button>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Dans quelle ville" title="Type in a name">
     
-    <ul id="myUL">
-      <li><a>Nancy - Tour Marcel Brot<button (click)="goToReservation()" style="float: right;" >Réserver</button></a> </li>
-      <li><a>CH Narbonne  <button (click)="goToReservation()" style="float: right;">Réserver</button></a></li>
-      <li><a>Paris  <button (click)="goToReservation()" style="float: right;">Réserver</button></a></li>
-      
+<!-- Barre de recherche fonctionnel -->
+    <div class="container">
+        <div class="row">
+    <input type="text" id="myInput" name="search" [(ngModel)]="searchText" placeholder="Chercher un centre de vaccination"title="Type in a name">
+    
+    <ul id="myUL" *ngFor="let centre of centres | filter:searchText">
+      <li><a>{{centre.name}}<button (click)="goToReservation()" style="float: right;" >Réserver</button></a> </li>
     </ul>
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
+        </div>
+        </div>
+<!-- Barre de recherche fonctionnel -->
 
 </body>
 </html>

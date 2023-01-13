@@ -28,7 +28,11 @@ export interface ExampleTab {
 
 
 export class SuperadminComponent implements OnInit {
-
+searchText: any;
+centres = [
+  {name:"CHU Nancy", city: 'INancy'},
+  {name:"CHU Narbonne", city: 'Narbonne'},
+  {name:"CHU Metz", city: 'Metz'},];
   
 applyFilter(arg0: any) {
 throw new Error('Method not implemented.');
