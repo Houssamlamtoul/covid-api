@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6 ielt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7 ielt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Paper Stack</title>
+<link rel="stylesheet" type="text/css" href="reservation.component.scss" />
+</head>
+<body>
+<div class="container">
+  <section id="content">
+    <form action="">
+        
+        <h1>{{ centerName }}</h1>
+        <div>
+          <input type="text" [(ngModel)]="nom"  [ngModelOptions]="{standalone: true}" placeholder="Nom" required="" id="nom" />
+        </div>
+        <div>
+          <input type="text" [(ngModel)]="prenom"  [ngModelOptions]="{standalone: true}" placeholder="Prénom" required="" id="Prénom" />
+        </div>
+        <div>
+            <input type="text" [(ngModel)]="email"  [ngModelOptions]="{standalone: true}" placeholder="Email" required="" id="email" />
+          </div>
+        <div>
+          <input type="date" [(ngModel)]="date"  [ngModelOptions]="{standalone: true}">
+
+          <i class="fa fa-calendar"></i>
+
+        </div>
+        <div>
+          
+          <input type="submit" value="Confirmer" (click)="sendData()"/>
+          <a href="/home">Annuler</a>
+        </div>
+    </form><!-- form -->
+    
+  </section><!-- content -->
+</div><!-- container -->
+</body>
+</html>
+
+
+

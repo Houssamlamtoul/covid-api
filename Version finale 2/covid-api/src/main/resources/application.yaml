@@ -5,10 +5,13 @@ spring:
     password: betabeta
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-    open-in-view: false
     show-sql: true
     hibernate.ddl-auto: create
   liquibase:
     enabled: false
-    server:
-  port: 8080
+
+
+
+
+  
+
