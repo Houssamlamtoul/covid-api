@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/covid-db
     username: postgres
-    password: Azerty123
+    password: betabeta
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
@@ -12,3 +12,9 @@ spring:
     enabled: false
     server:
   port: 8080
+resilience4j:
+  ratelimiter:
+    configs:
+      default:
+        limitRefreshPeriod: 1m
+        limitForPeriod: 10
