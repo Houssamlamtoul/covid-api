@@ -105,14 +105,14 @@ Voici des exemples de quelques pages :
 
 
 
-**interface reservation :**
+**interface inscription :**
 
 ![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.003.png)
 
 
 
 
-**interface reservation :**
+**interface connexion :**
 
 ![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.004.png)
 
