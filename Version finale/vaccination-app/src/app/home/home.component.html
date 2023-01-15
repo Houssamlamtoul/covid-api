@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <h2>Trouver un centre de vaccination</h2>
+    <button (click)="goToInscription()" style="float: right;" >Inscription</button>
+    <button (click)="goToConnexion()" style="float: right;" >Connexion</button>
+    
+<!-- Barre de recherche fonctionnel -->
+    <div class="container">
+        <div class="row">
+    <input type="text" id="myInput" name="search" [(ngModel)]="searchText" placeholder="Chercher un centre de vaccination"title="Type in a name">
+    <p>Number of Centers: {{ centers.length }}</p>
+  <ng-container *ngFor="let i of centersNumber(); let j=index">
+    <ul id="myUL">
+      <li>
+        {{ centers[j].name }}  
+        <button (click)="goTooReservation(centers[j].name)" (click)="goToReservation()" style="float: right;">Réserver</button> 
+        {{ centers[j].address }} 
+      </li>
+    </ul>
+  </ng-container>
+   <!-- <ul id="myUL" *ngFor="let centre of centres | filter:searchText">
+      <li><a>{{centre.name}}<button (click)="goToReservation()" style="float: right;" >Réserver</button></a> </li>
+    </ul>-->
+        </div>
+        </div>
+<!-- Barre de recherche fonctionnel -->
+
+</body>
+</html>
