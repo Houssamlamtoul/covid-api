@@ -92,37 +92,37 @@ Voici des exemples de quelques pages :
 
 **section recherche d’un centre de vaccination :**
 
-![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.001.png)
+![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.001.png)
 
 **interface reservation :**
 
-![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.002.png)
+![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.002.png)
 
 
 
 
-
-
-
-
-**interface reservation :**
-
-![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.003.png)
 
 
 
 
 **interface reservation :**
 
-![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.004.png)
+![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.003.png)
+
+
+
+
+**interface reservation :**
+
+![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.004.png)
 
 **interface ajouter un centre de vaccination :**
 
-![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.005.png)
+![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.005.png)
 
-**interface accuil :**
+**interface accueil :**
 
-![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.006.png)
+![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.006.png)
 
 
 
@@ -139,79 +139,16 @@ Voici des exemples de quelques pages :
 
 
 
-
-
-
-Complet        :  ![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)
-
-
-Incomplet     :  ![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.008.png)
-
-
-Non réalisé   :  ![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.009.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.010.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.009.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.008.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.008.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.008.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.009.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.009.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.008.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.007.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.007.png)
 
 
 - Mise en production : 
 
-![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.011.png)
+![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.008.png)
 
 Nous utilisons le fichier JAR compilé de l'application et le plaçons dans une image qui comprend une JRE pour l'exécution en Java. (la commande : ***gradle build**)* et ensuite ***docker build -t covid-api-image*** pour builder l’image.
 
 Pour lancer l'application, il est recommandé d'utiliser un fichier docker-compose qui démarrera également la base de données. Il est important de désactiver le service PostgreSQL en cours d'exécution sur l'ordinateur afin d'éviter des conflits de ports.
 
-![](Aspose.Words.a3cdee4a-ac90-420b-9073-c1ef256795f1.012.png)
+![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.009.png)
 
