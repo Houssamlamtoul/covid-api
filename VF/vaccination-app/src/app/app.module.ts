@@ -34,7 +34,8 @@ import { AdminComponent } from './admin/admin.component';
 import { MedecinComponent } from './medecin/medecin.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FiledattenteComponent } from './filedattente/filedattente.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { LoginAuthInterceptor } from './login-auth.interceptor';
 
 
 @NgModule({
@@ -81,7 +82,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: LoginAuthInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
