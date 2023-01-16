@@ -1,3 +1,4 @@
+N.B : L'application est deans le fichier 'VF'
 
 Ce projet est réalisé par :
 
@@ -22,15 +23,9 @@ Base de donnée:
 Nous avons utilisé pgAdmin comme base de données avec le backend Spring car il offre une variété de fonctionnalités pour gérer et administrer facilement une base de données PostgreSQL. Il permet une visualisation graphique des tables, des vues, des index et des relations, facilitant ainsi la création et la modification des données. Il permet également d'exécuter des requêtes SQL et de visualiser les résultats de manière claire et détaillée. En utilisant pgAdmin avec Spring, nous avons pu facilement intégrer les fonctionnalités de gestion de base de données dans notre application, améliorant ainsi la gestion et la performance des données.
 
 
-- Back-end : *Security* 
+- Back-end : *Basicauth* 
 
-Tout d'abord, nous avons créé une classe de configuration pour la sécurité en utilisant JWT. Cette classe définit les règles de sécurité pour notre application, telles que les utilisateurs autorisés à accéder à certaines ressources et les méthodes d'authentification requises pour ces ressources.
-
-Ensuite, nous avons créé un service d'authentification qui gère la génération et la validation des jetons JWT. Ce service est utilisé pour vérifier les informations d'identification de l'utilisateur lors de la connexion et pour générer un jeton pour cet utilisateur si les informations sont valides.
-
-Nous avons également créé un filtre de sécurité qui vérifie que chaque demande contient un jeton valide avant de permettre l'accès à une ressource protégée. Ce filtre utilise le service d'authentification pour décoder les informations contenues dans le jeton et vérifier qu'elles sont valides.
-
-Enfin, nous avons intégré ces différents éléments dans notre application en utilisant les annotations appropriées pour protéger les ressources et en configurant les chemins pour lesquels l'authentification est requise.
+Tout d'abord, nous avons choisi d'utiliser l'authentification basique car elle est simple, facile à mettre en œuvre et relativement sûre lorsqu'elle est combinée avec HTTPS. C'est un schéma d'authentification très populaire et il est compatible avec la plupart des systèmes d'exploitation et des navigateurs. En outre, il est très fiable et peut être utilisé pour sécuriser des informations sensibles. Il permet également aux utilisateurs de se connecter en toute sécurité et de restreindre l'accès à certaines ressources.
 
 
 
@@ -87,6 +82,9 @@ Les guards en Angular sont des services qui permettent de protéger les routes d
 
 Les guards peuvent être utilisés pour protéger les routes de l'application et pour gérer les redirections en cas d'échec de la vérification des conditions de navigation.
 
+
+intercepteurs:
+Nous utilisons les intercepteurs d'Angular dans notre application pour ajouter des en-têtes personnalisés, pour logger les requêtes, pour modifier les réponses et pour gérer les erreurs. L'intercepteur d'Angular est très utile pour ajouter des en-têtes personnalisés à chaque requête. Nous pouvons également utiliser cet intercepteur pour conserver un journal des réponses des serveurs. Cela nous permet de détecter les erreurs et de les enregistrer dans le journal. De plus, nous pouvons également utiliser l'intercepteur pour modifier les réponses des serveurs avant de les transmettre à l'application. Enfin, l'intercepteur permet d'annuler les requêtes en cours et de changer l'URL de la requête.
 
 Voici des exemples de quelques pages :
 
