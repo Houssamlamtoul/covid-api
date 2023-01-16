@@ -19,8 +19,6 @@ public class DataInsertionRunner implements CommandLineRunner {
     @Autowired
     private UtilisateurRepository utilisateurRepository;
 
-    @Autowired
-    
 
     @Override
     public void run(String... args) throws Exception {
