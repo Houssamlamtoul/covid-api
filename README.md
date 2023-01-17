@@ -1,8 +1,10 @@
-N.B : - L'application est deans le fichier 'VF'
+N.B : - L'application est dans le fichier 'VF'
 
-   Pour le bon fonctionnement de l'application veuillez commencer par /home et de ne laisser l'authentification à la fin
+   Pour le bon fonctionnement de l'application veuillez commencer par /home (page de réservation) et de laisser l'authentification à la fin de votre test.
    
-   Pour tester la connexion : Superadmin :
+   Pour tester la connexion : 
+   
+   Superadmin :
    
       login : superadmin
       
