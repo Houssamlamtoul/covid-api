@@ -1,4 +1,7 @@
-N.B : L'application est deans le fichier 'VF'
+N.B : - L'application est deans le fichier 'VF'
+      - Pour le bon fonctionnement de l'application veuillez commencer par /home et de ne laisser l'authentification à la fin.
+      - Pour tester la connexion : Superadmin : login : superadmin
+                                                mot de passe : password
 
 Ce projet est réalisé par :
 
