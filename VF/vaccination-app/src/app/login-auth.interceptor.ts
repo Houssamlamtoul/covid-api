@@ -13,15 +13,20 @@ export class LoginAuthInterceptor implements HttpInterceptor {
   constructor() {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    if (sessionStorage.getItem('username') && sessionStorage.getItem('basicauth')) {
-      request = request.clone({
-        setHeaders: {
-          Authorization: sessionStorage.getItem('basicauth') || '{}'
-        }
-      })
-    }
 
-    return next.handle(request);
+    if(request.url.includes('/user/login')) {
+      return next.handle(request);
+    }
+    else {
+      if (sessionStorage.getItem('username') && sessionStorage.getItem('basicauth')) {
+        request = request.clone({
+          setHeaders: {
+            Authorization: sessionStorage.getItem('basicauth') || '{}'
+          }
+        })
+      }
+      return next.handle(request);
+    }
   }
 
 

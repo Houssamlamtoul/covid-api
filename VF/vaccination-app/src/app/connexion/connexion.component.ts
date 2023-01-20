@@ -23,10 +23,6 @@ export class ConnexionComponent implements OnInit {
   }
 
   connexion(){
-    // let data = {
-    //   login : this.login,
-    //   password : this.mdp
-    // }
 
     console.log("Hello " + this.login)
 
@@ -45,14 +41,6 @@ export class ConnexionComponent implements OnInit {
         console.log("Bad credentials")
       }
     )
-
-    
-    // this.http.post('http://localhost:8080/user/login', data ).subscribe(response => {
-    //     console.log('Request sent successfully');
-    //     localStorage.setItem('token', window.btoa(this.login+':'+this.mdp))
-    //     this.router.navigate(["/superadmin"])
-    //     console.log(response);
-    //   })
   }
 
 
@@ -64,20 +52,6 @@ export class ConnexionComponent implements OnInit {
     }
     const headers = new HttpHeaders({ Authorization: 'Basic ' + btoa((user + ':' + password)) })
     headers.set('Content-Type', 'application/json')
-    return this.http.post('http://localhost:8080/user/login',data)
-    // .subscribe(
-      // user => {
-
-      // }
-
-
-    //  map(
-    //    ( userData: any) => {
-
-    //     return userData;
-    //    }
-    //  )
-
-    ;
+    return this.http.post('http://localhost:8080/user/login',data);
   }
 }
