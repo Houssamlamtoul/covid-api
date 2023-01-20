@@ -3,6 +3,7 @@ package org.example.covidapi.controllers;
 import org.example.covidapi.dto.UtilisateurDto;
 import org.example.covidapi.entity.utilisateur;
 import org.example.covidapi.service.AuthentificationService;
+import org.example.covidapi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,12 +17,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class utilisateurController {
 
+
     @Autowired
-    AuthentificationService authentificationService;
+    UserService userService;
 
     @PostMapping("/login")
     public UserDetails login(@RequestBody UtilisateurDto utilisateur){
-        return authentificationService.loadUserByUsername(utilisateur.getLogin());
+        return userService.loadUserByUsername(utilisateur.getLogin());
     }
 
 }

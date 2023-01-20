@@ -8,15 +8,15 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AuthentificationService implements UserDetailsService {
+public class AuthentificationService  {
 
     @Autowired
     private UtilisateurRepository utilisateurRepository;
 
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        // TODO Auto-generated method stub
-        return utilisateurRepository.findByLogin(username);
-    }
+    // @Override
+    // public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    //     // TODO Auto-generated method stub
+    //     return utilisateurRepository.findByLogin(username);
+    // }
     
 }

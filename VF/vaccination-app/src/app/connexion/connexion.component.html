@@ -11,16 +11,17 @@
 <body>
 <div class="container">
   <section id="content">
-    <form action="">
+    <form action="" (ngSubmit)="connexion()">
       <h1>Connexion</h1>
       <div>
-        <input type="text" placeholder="email" [value]="login" required="" id="Email" />
+        <input type="text" placeholder="email" [(ngModel)]="login" required="" name="login" />
       </div>
       <div>
-        <input type="password" placeholder="Mot de passe" [value]="mdp" required="" id="password" />
+        <input type="password" placeholder="Mot de passe" [(ngModel)]="mdp" required="" name="mdp" />
       </div>
       <div>
-        <input type="submit" value="Connexion" (click)="connexion()" />
+        <!-- <input type="submit" value="Connexion" (click)="connexion()" /> -->
+        <button type="submit">connexion</button>
         <a href="/home">Mot de passe oublié ?</a>
         <a  href="/inscription" (click)="goToInscriptionpage()">S'inscrire</a>
       </div>

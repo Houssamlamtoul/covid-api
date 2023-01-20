@@ -8,25 +8,28 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
-public class utilisateur implements UserDetails {
+public class utilisateur  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(nullable = false)
     private String login;
     @Column(nullable = false)
-    private String mdp;
+    private String password;
     private String nom;
     private String prenom;
     private String email;
 
-    public utilisateur(String login, String mdp, String nom, String prenom, String email) {
+    public utilisateur(String login, String password, String nom, String prenom, String email) {
         this.login = login;
-        this.mdp = mdp;
+        this.password = password;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
 
+    }
+
+    public utilisateur() {
     }
 
     public Integer getId() {
@@ -45,12 +48,12 @@ public class utilisateur implements UserDetails {
         this.login = login;
     }
 
-    public String getMdp() {
-        return this.mdp;
+    public String getpassword() {
+        return this.password;
     }
 
-    public void setMdp(String mdp) {
-        this.mdp = mdp;
+    public void setpassword(String password) {
+        this.password = password;
     }
 
     public String getNom() {
@@ -77,46 +80,49 @@ public class utilisateur implements UserDetails {
         this.email = email;
     }
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    
 
-    @Override
-    public String getPassword() {
-        // TODO Auto-generated method stub
-        return this.mdp;
-    }
 
-    @Override
-    public String getUsername() {
-        // TODO Auto-generated method stub
-        return this.login;
-    }
+    // @Override
+    // public Collection<? extends GrantedAuthority> getAuthorities() {
+    //     // TODO Auto-generated method stub
+    //     return null;
+    // }
 
-    @Override
-    public boolean isAccountNonExpired() {
-        // TODO Auto-generated method stub
-        return true;
-    }
+    // @Override
+    // public String getPassword() {
+    //     // TODO Auto-generated method stub
+    //     return this.password;
+    // }
 
-    @Override
-    public boolean isAccountNonLocked() {
-        // TODO Auto-generated method stub
-        return true;
-    }
+    // @Override
+    // public String getUsername() {
+    //     // TODO Auto-generated method stub
+    //     return this.login;
+    // }
 
-    @Override
-    public boolean isCredentialsNonExpired() {
-        // TODO Auto-generated method stub
-        return true;
-    }
+    // @Override
+    // public boolean isAccountNonExpired() {
+    //     // TODO Auto-generated method stub
+    //     return true;
+    // }
 
-    @Override
-    public boolean isEnabled() {
-        // TODO Auto-generated method stub
-        return true;
-    }
+    // @Override
+    // public boolean isAccountNonLocked() {
+    //     // TODO Auto-generated method stub
+    //     return true;
+    // }
+
+    // @Override
+    // public boolean isCredentialsNonExpired() {
+    //     // TODO Auto-generated method stub
+    //     return true;
+    // }
+
+    // @Override
+    // public boolean isEnabled() {
+    //     // TODO Auto-generated method stub
+    //     return true;
+    // }
 
 }

@@ -24,6 +24,7 @@ public class Security {
     
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http, UserDetailsService userDetailsService) throws Exception {
+        
         http
         .authorizeHttpRequests()
             .antMatchers(HttpMethod.OPTIONS,"/**").permitAll()
@@ -31,15 +32,17 @@ public class Security {
             .anyRequest().authenticated()
             .and()
         .httpBasic(withDefaults())
-                .cors().disable()
-                .csrf().disable() //Desactivation de la protection csrf
-        .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);//On rend les session stateless
+                .csrf().disable().cors(); //Desactivation de la protection csrf
+        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);//On rend les session stateless
         return http.build();
     }
 
-    @Bean
+
+    
+	@Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
 
 }
