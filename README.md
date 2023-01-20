@@ -1,4 +1,4 @@
-N.B : - L'application est dans le fichier 'VF'
+N.B : - L'application est dans le dossier 'VF'
 
    Pour le bon fonctionnement de l'application veuillez commencer par /home (page de réservation) et de laisser l'authentification à la fin de votre test.
    
