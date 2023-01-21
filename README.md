@@ -114,9 +114,9 @@ Voici des exemples de quelques pages :
 
 
 
-**interface inscription :**
+**interface Superadmin :**
 
-![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.003.png)
+![](superadmin.png)
 
 
 
