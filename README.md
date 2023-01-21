@@ -8,9 +8,8 @@ N.B : - L'application est dans le dossier 'VF'
       
       mot de passe : password
       
-      
-      Les fonctionnalitées d'ajout/supression/modification d'un centre par exemple fonctionnent très bien.Voici un résumé de ce que nous avons pu réaliser :
-      ![](resm.png)
+  Les fonctionnalitées d'ajout/supression/modification d'un centre par exemple fonctionnent très bien.Voici un résumé de ce que nous avons pu réaliser :
+  ![](resm.png)    
 
 Ce projet est réalisé par :
 
