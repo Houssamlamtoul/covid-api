@@ -1,14 +1,16 @@
 N.B : - L'application est dans le dossier 'VF'
-
-   Pour le bon fonctionnement de l'application veuillez commencer par /home (page de réservation) et de laisser l'authentification à la fin de votre test.
    
-   Pour tester la connexion : 
+   Pour tester la connexion voici un exemple pour le Superadmin : 
    
    Superadmin :
    
       login : superadmin
       
       mot de passe : password
+      
+      
+      Les fonctionnalitées d'ajout/supression/modification d'un centre par exemple fonctionnent très bien.Voici un résumé de ce que nous avons pu réaliser :
+      ![](resm.png)
 
 Ce projet est réalisé par :
 
