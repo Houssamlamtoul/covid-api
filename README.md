@@ -148,9 +148,6 @@ Voici des exemples de quelques pages :
 
 
 
-![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.007.png)
-
-
 - Mise en production : 
 
 ![](Aspose.Words.04208850-b9b2-4273-a65b-4591af10d56c.008.png)
