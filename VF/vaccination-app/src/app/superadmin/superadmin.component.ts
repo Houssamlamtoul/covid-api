@@ -113,4 +113,7 @@ displayedColumns: any;
     centersNumber() {
       return new Array(this.centers.length);
     }
+    deconnexion(){
+      this.router.navigate(["/connexion"])
+    }
 }
